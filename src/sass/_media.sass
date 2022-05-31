@@ -1,0 +1,177 @@
+@media screen and (max-width: 1200px)
+    .menu
+        .menu_item
+            padding-right: 20px
+        .menu_link 
+            font-size: 13px
+    .main
+        &_header 
+            font-size: 48px
+        &_subheader
+            line-height: 40px
+    .reasons 
+        .reasons_block
+            margin-left: auto
+        &_text
+            width: 300px
+    .app
+        &_wrapper
+            height: 300px
+            width: 280px
+
+
+@media screen and (max-width: 991px)
+    .hamburger
+        display: none
+    .menu
+        display: flex
+        justify-content: space-around
+        .menu_item
+            padding-right: 10px
+        .menu_link
+            font-size: 10px
+    .subheader
+        .main_logo_text
+            font-size: 11px
+        .cta_number
+            font-size: 19px
+        &_button
+            width: 120px
+            height: 48px
+            font-size: 11px
+    .reasons 
+        &_block
+            width: 455px
+        &_subtitle
+            width: 70%
+            font-size: 15px
+        &_text
+            width: 230px
+
+            font-size: 13px
+        &_round
+            width: 100px
+            height: 100px
+            margin-right: 10px
+    .app
+        &_wrapper
+            height: 270px
+            width: 220px
+        &_text
+            font-size: 15px
+
+    .connect
+        .main_site_link
+            display: flex
+            justify-content: space-between
+            margin-top: 16px
+        .main_links
+            margin-left: 0
+        .second_side_link
+            display: flex
+            justify-content: space-between
+        .second_links 
+            font-size: 10px
+            margin-left: 0
+    .choice
+        &_car
+            width: 90%
+
+@media screen and (max-width: 768px)
+
+    .menu
+        position: fixed
+        display: flex
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        flex-direction: column
+        background-color: rgba(0, 0, 0, .8)
+        justify-content: center
+        align-items: center
+        z-index: 20
+        transition: 1s all
+        &_active
+            left: 0
+        &_item
+            margin-top: 25px
+            border-right: none
+        .menu_link
+            font-size: 17px
+
+    nav
+        position: relative   
+        .hamburger 
+            display: block
+            position: absolute
+            right: 20px
+            top: 50%
+            transform: translateY(-50%)
+            width: 26px
+            span
+                display: block
+                height: 2px
+                width: 100%
+                background-color: #fff
+                margin-bottom: 2px
+                transition: 0.7s all
+            &_active 
+                span
+                    margin-bottom: -2px
+                    &:nth-child(1)
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(3px) rotate(45deg)                
+                        
+    .subheader
+        .main_logo_uber 
+            width: 180px
+        .call_to_action
+            margin: 0 auto  
+
+    .main
+        &_header
+            font-size: 40px
+            line-height: 40px
+        &_subheader
+            font-size: 35px
+            margin-top: 10px
+
+@media screen and ( max-width: 577px ) 
+    .subheader
+        .main_logo_text
+            display: none 
+        .main_logo_uber
+            margin-top: 23px    
+        .xm-hidden
+            display: none
+        .xm-visible
+            display: block
+            font-size: 12px
+            margin: 0 auto
+            margin-top: 6px
+        &_button 
+            display: block
+            width: 60%
+            height: 70%
+            margin: 0 auto
+            margin-top: 5px
+
+    
+    .reasons
+        &_block
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        &_descr
+            text-align: center
+
+         
+    
+    
+    
+
